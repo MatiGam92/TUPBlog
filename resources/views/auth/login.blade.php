@@ -26,7 +26,7 @@
                         Ingresar
                     </button>
                     <div class="text-sm font-medium text-gray-300 text-center">
-                        ¿No tienes una cuenta? <a href="#" class="text-purple-950 hover:underline">Regístrate</a>
+                        ¿No tienes una cuenta? <a href="register" class="text-purple-950 hover:underline">Regístrate</a>
                     </div>
                     <div class="text-sm font-medium text-gray-300 text-center">
                         ¿Olvidaste tu contraseña? <a href="#" class="text-purple-950 hover:underline">Recupérala</a>
