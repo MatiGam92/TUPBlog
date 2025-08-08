@@ -24,7 +24,7 @@
                 <div class="flex items-center">
                     <a href="{{ route('dashboard') }}" class="flex items-center space-x-2">
                         {{-- Aquí irá tu logo TUPBlog. Asegúrate de que el archivo exista en public/images/ --}}
-                        <img src="{{ asset('images/logo-tupblog.png') }}" alt="TUPBlog Logo" class="h-10 w-auto dark:filter dark:invert"> {{-- 'dark:filter dark:invert' puede ayudar a invertir colores si tu logo es PNG y no tienes una versión oscura --}}
+                        <img src="{{ asset('logoTUPBlog2.png') }}" alt="TUPBlog Logo" class="h-16 w-36 mx-auto dark:filter dark:invert"> {{-- 'dark:filter dark:invert' puede ayudar a invertir colores si tu logo es PNG y no tienes una versión oscura --}}
                         <span class="text-white text-2xl font-bold tracking-wide dark:text-detalle-muy-oscuro">TUPBlog</span>
                     </a>
                 </div>

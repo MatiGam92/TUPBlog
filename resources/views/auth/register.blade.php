@@ -3,7 +3,6 @@
         <!-- Columna de imagen de fondo (oculta en dispositivos pequeños) -->
         <div class="hidden lg:flex lg:col-span-2 items-center justify-center bg-cover bg-center h-full" style="background-image: url('{{ asset('fondoTUPBlog.jpg') }}');">
         </div>
-
         <!-- Columna del formulario de registro -->
         <div class="flex flex-col items-center justify-center p-4 h-full">
             <div class="w-full max-w-md p-6 bg-purple-900 bg-opacity-75 rounded-lg shadow-lg">

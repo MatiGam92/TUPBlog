@@ -17,7 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/dashboard'; // Esta línea es fundamental para la redirección post-login.
+    public const HOME = '/account-verified'; // Esta línea es fundamental para la redirección post-login.
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
