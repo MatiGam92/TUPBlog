@@ -16,28 +16,31 @@
                     @csrf
                     <div>
                         <label for="name" class="block mb-2 text-sm font-medium text-gray-300">Nombre completo</label>
-                        <input type="text" name="name" id="name" class="bg-gray-700 border border-gray-600 text-white sm:text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 @error('name') border-red-500 @enderror" placeholder="Tu nombre y apellido" required>
+                        <input type="text" name="name" id="name" class="bg-gray-700 border border-gray-600 text-white sm:text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 @error('name') border-red-600 @enderror" placeholder="Tu nombre y apellido" required>
                         @error('name')
-                            <span class="text-red-500 text-sm mt-1">{{ $message }}</span>
+                            <span class="text-red-600 text-sm mt-1">{{ $message }}</span>
                         @enderror
                     </div>
                     <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-300">Correo electrónico</label>
-                        <input type="email" name="email" id="email" class="bg-gray-700 border border-gray-600 text-white sm:text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 @error('email') border-red-500 @enderror" placeholder="name@empresa.com" required>
+                        <input type="email" name="email" id="email" class="bg-gray-700 border border-gray-600 text-white sm:text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 @error('email') border-red-600 @enderror" placeholder="name@empresa.com" required>
                         @error('email')
-                            <span class="text-red-500 text-sm mt-1">{{ $message }}</span>
+                            <span class="text-red-600 text-sm mt-1">{{ $message }}</span>
                         @enderror
                     </div>
                     <div>
                         <label for="password" class="block mb-2 text-sm font-medium text-gray-300">Contraseña</label>
-                        <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-700 border border-gray-600 text-white sm:text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 @error('password') border-red-500 @enderror" required>
+                        <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-700 border border-gray-600 text-white sm:text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 @error('password') border-red-600 @enderror" required>
                         @error('password')
-                            <span class="text-red-500 text-sm mt-1">{{ $message }}</span>
+                            <span class="text-red-600 text-sm mt-1">{{ $message }}</span>
                         @enderror
                     </div>
                     <div>
                         <label for="password_confirmation" class="block mb-2 text-sm font-medium text-gray-300">Confirmar contraseña</label>
-                        <input type="password" name="password_confirmation" id="password_confirmation" placeholder="••••••••" class="bg-gray-700 border border-gray-600 text-white sm:text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5" required>
+                        <input type="password" name="password_confirmation" id="password_confirmation" placeholder="••••••••" class="bg-gray-700 border border-gray-600 text-white sm:text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 @error('password') border-red-600 @enderror" required>
+                        @error('password')
+                            <span class="text-red-600 text-sm mt-1">{{ $message }}</span>
+                        @enderror
                     </div>
 
                     <button type="submit" class="w-full text-white bg-purple-800 hover:bg-purple-950 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
